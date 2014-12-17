@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D5877D9E1A41B08A0096B016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5877D9D1A41B08A0096B016 /* AppDelegate.swift */; };
-		D5877DA01A41B08A0096B016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5877D9F1A41B08A0096B016 /* ViewController.swift */; };
+		D5877DA01A41B08A0096B016 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5877D9F1A41B08A0096B016 /* Settings.swift */; };
 		D5877DA31A41B08A0096B016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5877DA11A41B08A0096B016 /* Main.storyboard */; };
 		D5877DA51A41B08A0096B016 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5877DA41A41B08A0096B016 /* Images.xcassets */; };
 		D5877DA81A41B08A0096B016 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5877DA61A41B08A0096B016 /* LaunchScreen.xib */; };
 		D5877DB41A41B08A0096B016 /* ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5877DB31A41B08A0096B016 /* ReminderTests.swift */; };
+		D58D7E8A1A41C89C00ADEB96 /* DetailSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58D7E891A41C89C00ADEB96 /* DetailSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		D5877D981A41B08A0096B016 /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5877D9C1A41B08A0096B016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5877D9D1A41B08A0096B016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5877D9F1A41B08A0096B016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5877D9F1A41B08A0096B016 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D5877DA21A41B08A0096B016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5877DA41A41B08A0096B016 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D5877DA71A41B08A0096B016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D5877DAD1A41B08A0096B016 /* ReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5877DB21A41B08A0096B016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5877DB31A41B08A0096B016 /* ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderTests.swift; sourceTree = "<group>"; };
+		D58D7E891A41C89C00ADEB96 /* DetailSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				D5877D9D1A41B08A0096B016 /* AppDelegate.swift */,
-				D5877D9F1A41B08A0096B016 /* ViewController.swift */,
+				D5877D9F1A41B08A0096B016 /* Settings.swift */,
+				D58D7E891A41C89C00ADEB96 /* DetailSettings.swift */,
 				D5877DA11A41B08A0096B016 /* Main.storyboard */,
 				D5877DA41A41B08A0096B016 /* Images.xcassets */,
 				D5877DA61A41B08A0096B016 /* LaunchScreen.xib */,
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5877DA01A41B08A0096B016 /* ViewController.swift in Sources */,
+				D58D7E8A1A41C89C00ADEB96 /* DetailSettings.swift in Sources */,
+				D5877DA01A41B08A0096B016 /* Settings.swift in Sources */,
 				D5877D9E1A41B08A0096B016 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +409,7 @@
 				D5877DB91A41B08A0096B016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5877DBA1A41B08A0096B016 /* Build configuration list for PBXNativeTarget "ReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				D5877DBC1A41B08A0096B016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
