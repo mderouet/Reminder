@@ -10,7 +10,7 @@ import UIKit
 import EventKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    let myArray = ["Notification", "Option 2", "Option 3","Option 4"]
+    let myArray = ["Notification", "Option 2", "Option 3","Option 4,"Option 5"]
         //Outlet
     @IBOutlet weak var tableReminder: UITableView!
     
