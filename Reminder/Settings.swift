@@ -7,43 +7,54 @@
 //
 
 import UIKit
+import EventKit
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    
-    //Variable
-    var myTab = Array<String>()
-    
-    //Outlet
+    let myArray = ["Notification", "Option 2", "Option 3"]
+        //Outlet
     @IBOutlet weak var tableReminder: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myTab.append("Faire la cuisine")
-        myTab.append("Faire la vaiselle")
-        myTab.append("Jesus Christ")
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myTab.count
+        return myArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("custom") as UITableViewCell
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+
+     
+          let cellContent = self.myArray[indexPath.row]
+           cell.textLabel!.text = cellContent
         
-        cell.textLabel.text = String(myTab[indexPath.row])
-        if let detailLabel = cell.detailTextLabel {
-            detailLabel.text = "detail text"
-        }
-        return cell;
+        return cell
     }
     
+ 
     
+    func dateNow(days:Double) -> NSDate
+    {
+        let now = NSDate()
+        let date = now.dateByAddingTimeInterval((24 * days) * 3600)
+        return date
+    }
+    
+    func dateToString(dates:NSDate) -> String
+    {
+        var dateString:String
+        var date = NSDate()
+        date = dates
+        let formatter = NSDateFormatter()
+        formatter.timeStyle = .LongStyle
+        dateString = formatter.stringFromDate(date)
+        return dateString
 
+    }
 }
 
